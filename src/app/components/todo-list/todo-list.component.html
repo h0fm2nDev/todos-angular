@@ -1,0 +1,13 @@
+<div class="container content">
+    <div class="row py-5">
+        <div class="col-12">
+            <app-input-form></app-input-form>
+        </div>
+    </div>
+    <hr>
+    <div class="row py-5">
+      <div class="col-12 col-md-4" *ngFor="let todo of todoService.getTodos()">
+        <app-todo-item [todo]="todo"></app-todo-item>
+      </div>
+    </div>
+</div>
