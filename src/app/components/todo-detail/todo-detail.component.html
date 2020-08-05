@@ -1,0 +1,21 @@
+<div class="container-fluid content p-0 m-0" *ngIf="todo">
+    <div class="row">
+        <div class="col-12">
+            <header class="py-5 bg-image-full h-100 overflow-x-hidden" style="background-image: url({{todo.imgSrc}}); background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;"></header>
+            
+            <!-- Content section -->
+            <section class="py-5">
+            <form ng-show="editing" ng-submit="editing = false">
+                <div class="container">
+                    <h1>{{todo.title || 'No title'}}</h1>
+                    <p class="lead">{{todo.category}}</p>
+                    <p>{{todo.description || 'No description'}}</p>
+                </div>
+            </form>
+            </section>
+        </div>
+    </div>
+</div>

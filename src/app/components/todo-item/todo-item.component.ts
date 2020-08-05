@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Todos } from '../../data/models/Todos';
+import { Router, ActivatedRoute } from '@angular/router';
 import { TodoServiceService } from '../../services/todo/todo-service.service';
 
 @Component({

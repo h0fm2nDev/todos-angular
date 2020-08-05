@@ -7,6 +7,10 @@
                     <input type="text" class="form-control" [(ngModel)]="inputtodo.title" name="title" (keyup)="todoTitle = $event.target.value">
                 </div>
                 <div class="form-group">
+                    <label>Todo category</label>
+                    <input type="text" class="form-control" [(ngModel)]="inputtodo.category" name="category" (keyup)="todoCategory = $event.target.value">
+                </div>
+                <div class="form-group">
                     <label>Todo description</label>
                     <textarea class="form-control" rows="3" [(ngModel)]="inputtodo.description" name="description" (keyup)="todoDesc = $event.target.value"></textarea>
                 </div>
@@ -16,8 +20,7 @@
                 </div>
                 <a class="btn btn-primary text-white" (click)="addTodo($event)">Save</a>
             </div>
-            <div class="col-12 col-md-5">
-                <img src={{inputtodo.imgSrc}} alt="Input img" class="my-5 my-md-0">
+            <div class="col-12 col-md-5" style="background-image: url({{inputtodo.imgSrc}}); background-size: cover;">
             </div>
         </div>
     </div>

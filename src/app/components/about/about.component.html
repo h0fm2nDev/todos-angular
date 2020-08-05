@@ -1,0 +1,14 @@
+<div class="container content">
+    <div class="row py-5">
+        <div class="col-12">
+            <h2>About</h2>
+        </div>
+    </div>
+    <hr>
+    <div class="row py-5">
+      <div class="col-12" *ngFor="let about of abouts">
+        <h4 class="my-5">{{about.title}}</h4>
+        <span class="my-5">{{about.description}}</span>
+      </div>
+    </div>
+</div>

@@ -11,11 +11,13 @@ import { Todos } from 'src/app/data/models/Todos';
 })
 export class InputFormComponent implements OnInit {
   public todoTitle: String;
+  public todoCategory: String;
   public todoDesc: String;
   public todoImg: String;
 
   inputtodo = {
     title: 'Example todo',
+    category: 'Examples',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et libero eu nisi tempor consectetur. Nulla dignissim eros at ex ultricies efficitur',
     isDone: false,
     imgSrc: 'https://image.freepik.com/free-photo/beach-background-with-beach-elements-copyspace_23-2147836084.jpg'
@@ -23,6 +25,7 @@ export class InputFormComponent implements OnInit {
 
   constructor(private todoService: TodoServiceService) {
       this.todoTitle = this.inputtodo.title
+      this.todoCategory = this.inputtodo.category
       this.todoDesc = this.inputtodo.description
       this.todoImg = this.inputtodo.imgSrc
   }
@@ -32,8 +35,9 @@ export class InputFormComponent implements OnInit {
   }
 
   public async addTodo(event): Promise<void> {
-    this.todoService.addTodo(this.todoTitle, this.todoDesc, this.todoImg);
+    this.todoService.addTodo(this.todoTitle, this.todoCategory, this.todoDesc, this.todoImg);
     this.todoTitle = this.inputtodo.title
+    this.todoCategory = this.inputtodo.category
     this.todoDesc = this.inputtodo.description
     this.todoImg = this.inputtodo.imgSrc
     console.log('Saved', event)

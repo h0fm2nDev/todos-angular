@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router'
+import { switchMap } from 'rxjs/operators'
 import { TodoServiceService } from '../../services/todo/todo-service.service'
 import { Todos } from '../../data/models/Todos';
 
@@ -10,10 +12,12 @@ import { Todos } from '../../data/models/Todos';
 export class TodoListComponent implements OnInit {
   todos: Todos[]
 
-  constructor(public todoService: TodoServiceService) { }
+  constructor(public todoService: TodoServiceService,
+    private route: ActivatedRoute,
+    private router: Router) { }
 
   ngOnInit(): void {
-    this.getTodos()
+    this.getTodos();
   }
 
   getTodos(): void {

@@ -3,44 +3,50 @@ import { Todos } from '../models/Todos'
 export const TODOS: Todos[] = [
     {
         id: 1,
-        title: 'Kurs Angulara',
-        description: 'Nauczyć się kodować',
-        isDone: true,
-        imgSrc: 'https://image.freepik.com/free-photo/portrait-beautiful-female-looking-mobile_23-2148395473.jpg'
+        title: 'Learn Angular',
+        category: 'Studies',
+        description: 'Get to know one of most popular frameworks',
+        isDone: false,
+        imgSrc: 'https://image.freepik.com/free-photo/coding-man_1098-18084.jpg'
     },
     {
         id: 2,
-        title: 'Napisać wstęp pracy inżynierskiej',
-        description: 'Taki fajny i długi',
+        title: 'Write an introduction to an engineering thesis',
+        category: 'Studies',
+        description: 'Specific and to the point',
         isDone: true,
-        imgSrc: 'https://image.freepik.com/free-photo/beach-background-with-beach-elements-copyspace_23-2147836084.jpg'
+        imgSrc: 'https://image.freepik.com/free-photo/research-net_1098-16273.jpg'
     },
     {
         id: 3,
-        title: 'Kurs Angulara',
-        description: 'Nauczyć się kodować',
-        isDone: true,
-        imgSrc: 'https://image.freepik.com/free-photo/portrait-beautiful-female-looking-mobile_23-2148395473.jpg'
+        title: 'Retouching photos with a model',
+        category: 'Photography',
+        description: '',
+        isDone: false,
+        imgSrc: 'https://image.freepik.com/free-photo/unrecognizable-photographer-sitting-desk-retouching-photos-computer_1098-17848.jpg'
     },
     {
         id: 4,
-        title: 'Kurs Angulara',
-        description: 'Nauczyć się kodować',
+        title: 'Photosession with Magdalena',
+        category: 'Photography',
+        description: 'In Wrocław',
         isDone: true,
-        imgSrc: 'https://image.freepik.com/free-photo/beach-background-with-beach-elements-copyspace_23-2147836084.jpg'
+        imgSrc: 'https://image.freepik.com/free-photo/fashion-girl-black-leather-jacket-holding-old-camera_176420-8972.jpg'
     },
     {
         id: 5,
-        title: 'Kurs Angulara',
-        description: 'Nauczyć się kodować',
+        title: 'Website design',
+        category: 'Media agency',
+        description: 'Breathtaking project for demanding client',
         isDone: true,
-        imgSrc: 'https://image.freepik.com/free-photo/portrait-beautiful-female-looking-mobile_23-2148395473.jpg'
+        imgSrc: 'https://image.freepik.com/free-photo/working-space-business-freelance-concept-top-view-flat-lay-toning_1220-1856.jpg'
     },
     {
         id: 6,
-        title: 'Kurs Angulara',
-        description: 'Nauczyć się kodować',
-        isDone: true,
-        imgSrc: 'https://image.freepik.com/free-photo/beach-background-with-beach-elements-copyspace_23-2147836084.jpg'
+        title: 'Deploy app',
+        category: 'Development',
+        description: '',
+        isDone: false,
+        imgSrc: 'https://image.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg'
     }
 ]

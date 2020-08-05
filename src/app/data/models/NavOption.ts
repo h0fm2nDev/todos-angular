@@ -1,3 +1,4 @@
 export interface NavOption {
-    title: string
+    title: string,
+    linkto: string
 }
